@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    android:paddingTop="50dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="名字:jiangqqlmj"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:text="联系方式"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        <Button
+            android:id="@+id/login_btn_register"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="200dp"
+            android:background="@color/color_lv_selector"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_avatar_white"
+            android:text="注销"
+            android:textColor="@color/color_white" />
+    </RelativeLayout>
+        <!--中间信息列表-->
+        <ListView
+            android:layout_marginTop="100dp"
+            android:cacheColorHint="#00000000"
+            android:scrollbars="none"
+            android:id="@+id/lv_left_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></ListView>
+
+</RelativeLayout>
